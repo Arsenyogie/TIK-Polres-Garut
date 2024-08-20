@@ -59,6 +59,8 @@ header {
     justify-content:flex-start;
     list-style: none;
     padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(92, 89, 89);
 }
 
 .navbar ul li {
@@ -166,3 +168,96 @@ main {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* tentang html css */
+
+.tentang-main section  {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tentang-main .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#home {
+    background: #707c8a;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#home h2 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#home span {
+    color: #FFD700;
+}
+
+.cta-button {
+    background: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#about, #services, #contact {
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+#services .service-box {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+main .tentang-main #tentang {
+    background-image: none;
+}
+
+/* css foto html */
+
+main .foto-html {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    
+}
+
+.foto-content {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.foto-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.foto-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 300px; /* Batas lebar maksimal untuk setiap gambar */
+    border-radius: 10px; /* Membuat sudut gambar menjadi melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada gambar */
+}
+
+.foto-content .main-image {
+    width: 100%;
+    max-width: 600px; /* Ukuran maksimal untuk gambar utama */
+    margin-bottom: 30px;
+}
