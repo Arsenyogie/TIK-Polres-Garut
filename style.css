@@ -44,6 +44,7 @@ header {
 
 .header-content h1 {
     font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(235, 225, 225, 0.5);
 }
 
 .navbar {
@@ -97,7 +98,7 @@ header {
     }
 }
 
-main {
+.index {
     
     padding: 20px;
     background-image: url(img/mainbg.jpg);
@@ -105,6 +106,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     /* display: flex; */
+    
 }
 
 .main-content h2 {
@@ -228,36 +230,81 @@ main .tentang-main #tentang {
 
 /* css foto html */
 
-main .foto-html {
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    
-}
-
-.foto-content {
+.foto-html {
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 20px;
+    height: 2000px;
     
 }
 
 .foto-content h2 {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: whitesmoke;
+    color: whitesmoke
 }
 
-.foto-content img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    max-width: 300px; /* Batas lebar maksimal untuk setiap gambar */
-    border-radius: 10px; /* Membuat sudut gambar menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada gambar */
-}
-
-.foto-content .main-image {
-    width: 100%;
-    max-width: 600px; /* Ukuran maksimal untuk gambar utama */
+.main-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+}
+
+.foto-html .foto-content {
+    height: 2000px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(img/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+
+/* Gaya untuk galeri gambar */
+.foto-content img {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-height: 500px;
+}
+
+.foto-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-content img {
+        width: 200px;
+        height: 300px;
+        margin: 10px 0;
+        
+    }
+}
+
+.foto-content div {
+    height: 500px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    display: flex;
+
 }
